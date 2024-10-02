@@ -1,12 +1,9 @@
-# Your Name Here
+# Johnavon Jones
 # UWYO COSC 1010
-# Submission Date
+# 10/3/2024
 # Lab 03 
-# Lab Section: 
-# Sources, people worked with, help given to: 
-# your
-# comments
-# here
+# Lab Section: 12
+# Sources, people worked with, help given to: N/A
 
 
 
@@ -99,7 +96,22 @@ min_temps = [
 # You cannot use any pre-existing functions (like mean()) and must perform the calculations manually.
 # Output the results of both calculations.
 
+maxmean = 0
+minmean = 0
+indexlen = len(max_temps)
+for index in range(len(max_temps)):
+    maxmean = maxmean + max_temps[index]
+    minmean = minmean + min_temps[index]
+print(f"the average maximum temperature in Laramie in 2023 was {maxmean / indexlen} degrees F")
+print(f"the average minumum temperature in Laramie in 2023 was {minmean / indexlen} degress F")
+
+
+
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
+min_temp = min(min_temps)
+max_temp = max(max_temps)
+print(f"The highest recorded temp in Laramie was {max_temp}")
+print(f"The minimum recorded temp in Laramie was {min_temp}")
 
 
