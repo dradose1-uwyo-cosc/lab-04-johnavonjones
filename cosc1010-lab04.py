@@ -109,9 +109,10 @@ print(f"the average minumum temperature in Laramie in 2023 was {minmean / indexl
 
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
-min_temp = min(min_temps)
-max_temp = max(max_temps)
-print(f"The highest recorded temp in Laramie was {max_temp}")
-print(f"The minimum recorded temp in Laramie was {min_temp}")
+
+min_temp = sorted(min_temps)
+max_temp = sorted(max_temps)
+print(f"The highest recorded temp in Laramie was {max_temp[-1]}")
+print(f"The minimum recorded temp in Laramie was {min_temp[0]}")
 
 
